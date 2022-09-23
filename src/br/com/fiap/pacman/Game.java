@@ -97,11 +97,11 @@ public class Game extends JFrame implements KeyListener {
 			// se player colide com ghost bomb e invensivel for false = perde vida
 
 			
-			/* player.movimento(WIDTH, WIDTH, NORMAL, speed);
+			player.movimento(WIDTH, WIDTH, NORMAL, speed);
 			ghost1.movimentoAleatorio(WIDTH, WIDTH, speed);
 			ghost2.movimentoAleatorio(WIDTH, WIDTH, speed);
 			ghost3.movimentoAleatorio(WIDTH, WIDTH, speed);
-			ghost4.movimentoAleatorio(WIDTH, WIDTH, speed);*/
+			ghost4.movimentoAleatorio(WIDTH, WIDTH, speed);
 			
 			
 
