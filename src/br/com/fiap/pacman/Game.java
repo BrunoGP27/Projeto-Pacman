@@ -86,16 +86,12 @@ public class Game extends JFrame implements KeyListener {
 	}
 
 	private void run() {
-		while (player.getLife() > 0) {	
-			var player = new Player();
-			var ghost = new Ghost();	
+		while (player.getLife() > 0) {					
 			
-
 			// coloque aqui os métodos de movimentação e colisão
 			// todos ghost movimentam
 			// se player colide booster fica invensivel pela duracao de booster
 			// se player colide com ghost bomb e invensivel for false = perde vida
-
 			
 			player.movimento(WIDTH, WIDTH, NORMAL, speed);
 			ghost1.movimentoAleatorio(WIDTH, WIDTH, speed);
@@ -103,9 +99,6 @@ public class Game extends JFrame implements KeyListener {
 			ghost3.movimentoAleatorio(WIDTH, WIDTH, speed);
 			ghost4.movimentoAleatorio(WIDTH, WIDTH, speed);
 			
-			
-
-
 			if (player.getX() == booster.getX() && player.getY() == booster.getY())
 				player.setInvencivel(true);
 			if (player.isInvencivel() == false) {
